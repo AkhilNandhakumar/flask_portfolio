@@ -9,24 +9,30 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav mr-auto">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href={{ url_for('index') }}>Portfolio</a>
-            <a class="nav-link" href={{ url_for('kangaroos') }}>Kangaroos</a>
-            <a class="nav-link" href={{ url_for('walruses') }}>Walruses</a>
-            <a class="nav-link" href={{ url_for('hawkers') }}>Hawkers</a>
-            <a class="nav-link" href="/aboutmeakhil">Greet Akhil</a>
+            <a class="nav-link" href="/akhil">Greet Akhil</a>
 
 
             <!-- Greet Code Dropdown Attempt -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Greet Akhil</a></li>
-                    <li><a class="dropdown-item" href="#">test 1</a></li>
-                    <li><a class="dropdown-item" href="#">test 2</a></li>
-                    <li><a class="dropdown-item" href="#">test 3</a></li>
-                </ul>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/#">Akhil Nandhakumar</a>
+                    <a class="dropdown-item" href="/#">Calissa Tyrrell</a>
+                    <a class="dropdown-item" href="/#">Avinh Huynh</a>
+                    <a class="dropdown-item" href="/#">Valen Reynolds</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarModel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mini-Labs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Video Journal - 0</a>
+                    <a class="dropdown-item" href="#">Greet Code</a>
+                </div>
             </li>
         </ul>
     </div>
